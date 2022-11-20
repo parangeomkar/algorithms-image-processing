@@ -18,7 +18,8 @@ vOperator = np.array([[1, 0, -1], [2, 0, -2], [1, 0, -1]])
 # apply convolution
 for i in range(edgeDetected.shape[0] - 3):
     for j in range(edgeDetected.shape[1] - 3):
-
+        
+        # select 3x3 pixel section from image
         imageSection = data[np.ix_(np.arange(3) + i, np.arange(3) + j)]
 
         # vertical edge
