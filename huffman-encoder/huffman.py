@@ -82,5 +82,5 @@ recursiveDecode(tree, encodedText)
 
 print("Encoded - \n" + "".join(str(s) for s in encodedText))
 print("\nDecoded - \n"+"".join(text))
-print("\nOriginal string size - " + str(len(text) * 8)+"Bytes")
-print("Compressed string size - " + str(len(encodedText))+"Bytes")
+print("\nOriginal string size - " + str(len(text)*8)+"Bits")
+print("Compressed string size - " + str(len(encodedText))+"Bits")
